@@ -1,5 +1,5 @@
 {
-  "name": "config-check",
+  "name": "validate-config",
   "version": "0.0.1",
   "description": "validate project config object",
   "main": "index.js",
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/oneblink/toolkit-js/issues"
   },
-  "homepage": "https://github.com/oneblink/toolkit-js#readme"
+  "homepage": "https://github.com/oneblink/toolkit-js#readme",
+  "devDependencies": {
+    "@types/lodash.isplainobject": "^4.0.7"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "lodash.isplainobject": "^4.0.6"
+  }
 }
