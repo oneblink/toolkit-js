@@ -6,6 +6,6 @@
     },
     {
       "path": "./packages/http-service"
-  },
+    },
   ]
 }
