@@ -2,10 +2,10 @@
   "extends": "./tsconfig-base.json",
   "references": [
     {
-        "path": "./packages/validate-config"
+      "path": "./packages/validate-config"
     },
     {
       "path": "./packages/http-service"
-    },
+    }
   ]
 }
