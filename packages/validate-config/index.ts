@@ -1,55 +1,55 @@
-import isPlainObject from "lodash.isplainobject";
-import dotenv from "dotenv";
+import isPlainObject from 'lodash.isplainobject'
+import dotenv from 'dotenv'
 
-if (process.env.NODE_ENV !== "production") {
-  dotenv.config();
+if (process.env.NODE_ENV !== 'production') {
+  dotenv.config()
 }
 
 function assertExists<T>(
   val: T,
-  propName: string
+  propName: string,
 ): asserts val is NonNullable<T> {
   if (val === undefined || val === null || Number.isNaN(val)) {
-    const msg = `Config variable ${propName} has no value`;
-    throw new Error(msg);
+    const msg = `Config variable ${propName} has no value`
+    throw new Error(msg)
   }
 }
 
 function validateConfigValue<T>(
   value: T | undefined | null,
-  propName: string
+  propName: string,
 ): NonNullable<T> {
-  const msg = `Config variable ${propName} has no value`;
-  assertExists(value, propName);
+  const msg = `Config variable ${propName} has no value`
+  assertExists(value, propName)
 
-  if (isPlainObject(value)) return validateConfigObject(value);
+  if (isPlainObject(value)) return validateConfigObject(value)
 
   if (
-    (typeof value === "string" && value === "") ||
-    (typeof value === "number" && value === -1)
+    (typeof value === 'string' && value === '') ||
+    (typeof value === 'number' && value === -1)
   ) {
-    throw new Error(msg);
+    throw new Error(msg)
   }
 
-  return value;
+  return value
 }
 
 export default function validateConfigObject<T>(config: T): T {
-  let hasErrors = false;
+  let hasErrors = false
   Object.entries(config).forEach(([key, value]) => {
     try {
-      validateConfigValue(value, key);
+      validateConfigValue(value, key)
     } catch (e) {
-      if (process.env.CI === "true") {
-        console.error(e);
+      if (process.env.CI === 'true') {
+        console.error(e)
       }
-      hasErrors = true;
+      hasErrors = true
     }
-  });
+  })
 
-  if (process.env.CI === "true" && hasErrors) {
-    throw new Error("CI Vars are missing, see ci log for details");
+  if (process.env.CI === 'true' && hasErrors) {
+    throw new Error('CI Vars are missing, see ci log for details')
   }
 
-  return config;
+  return config
 }
