@@ -1,11 +1,10 @@
 {
-  "name": "toolkit",
+  "name": "reference-data",
   "version": "0.0.1",
-  "description": "A Collection of tools for use with the OneBlink Platform by the Client Services team",
+  "description": "reference data helpers",
   "main": "index.js",
   "scripts": {
-    "build": "turbo run build",
-    "test": "turbo run test"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,15 +16,7 @@
     "url": "https://github.com/oneblink/toolkit-js/issues"
   },
   "homepage": "https://github.com/oneblink/toolkit-js#readme",
-  "workspaces": [
-    "packages/*",
-    "client/*"
-  ],
-  "devDependencies": {
-    "@types/node": "^18.0.3",
-    "turbo": "^1.3.1",
-    "typescript": "^4.7.4",
-    "eslint": "^8.19.0",
-    "prettier": "^2.7.1"
+  "peerDependencies": {
+    "localforage": "^1.10.0"
   }
 }
