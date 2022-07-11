@@ -19,7 +19,7 @@
   "homepage": "https://github.com/oneblink/toolkit-js#readme",
   "workspaces": [
     "packages/*",
-    "client/*"
+    "client"
   ],
   "devDependencies": {
     "@types/node": "^18.0.3",

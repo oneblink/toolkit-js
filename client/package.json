@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/oneblink/toolkit-js/issues"
   },
-  "homepage": "https://github.com/oneblink/toolkit-js#readme"
+  "homepage": "https://github.com/oneblink/toolkit-js#readme",
+  "peerDependencies": {
+    "localforage": "^1.10.0"
+  }
 }
