@@ -30,8 +30,8 @@ export class ReferenceDataStore {
   async getReferenceDataByType<T>(
     typeKey: string
   ): Promise<ReferenceData<T> | undefined> {
-    const item = await this.store.getItem(typeKey);
-    return (item as ReferenceData<T>) || undefined;
+    const item = await this.store.getItem<ReferenceData<T>>(typeKey);
+    return item || undefined;
   }
 
   async getAllReferenceData() {
