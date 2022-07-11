@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/oneblink/toolkit-js/issues"
   },
-  "homepage": "https://github.com/oneblink/toolkit-js#readme"
+  "homepage": "https://github.com/oneblink/toolkit-js#readme",
+  "dependencies": {
+    "@oneblink/sdk-core": "^0.4.1",
+    "@oneblink/types": "github:oneblink/types",
+    "@types/lodash.clonedeep": "^4.5.7"
+  }
 }
