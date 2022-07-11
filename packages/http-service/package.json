@@ -1,0 +1,19 @@
+{
+  "name": "http-service",
+  "version": "0.0.1",
+  "description": "http-service package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oneblink/toolkit-js.git"
+  },
+  "author": "Simon Dobie",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/oneblink/toolkit-js/issues"
+  },
+  "homepage": "https://github.com/oneblink/toolkit-js#readme"
+}
