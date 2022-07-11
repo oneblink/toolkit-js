@@ -18,5 +18,10 @@
   "homepage": "https://github.com/oneblink/toolkit-js#readme",
   "peerDependencies": {
     "localforage": "^1.10.0"
+  },
+  "dependencies": {
+    "@oneblink/sdk-core": "^0.4.1",
+    "@oneblink/types": "github:oneblink/types",
+    "@types/lodash.clonedeep": "^4.5.7"
   }
 }
