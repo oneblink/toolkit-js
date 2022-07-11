@@ -20,7 +20,7 @@ export class ReferenceDataStore {
     await this.store.clear();
   }
 
-  async updateStore<T>(referenceData: ReferenceData[]) {
+  async updateStore(referenceData: ReferenceData[]) {
     await this.store.clear();
     for (const data of referenceData) {
       await this.store.setItem(data.type, data);
@@ -29,8 +29,9 @@ export class ReferenceDataStore {
 
   async getReferenceDataByType<T>(
     typeKey: string
-  ): Promise<ReferenceData<T> | null> {
-    return await this.store.getItem(typeKey);
+  ): Promise<ReferenceData<T> | undefined> {
+    const item = await this.store.getItem(typeKey);
+    return (item as ReferenceData<T>) || undefined;
   }
 
   async getAllReferenceData() {
