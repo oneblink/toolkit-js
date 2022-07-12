@@ -20,6 +20,9 @@
     "@oneblink/sdk-core": "^0.4.1"
   },
   "devDependencies": {
-    "@oneblink/types": "github:oneblink/types"
+    "@oneblink/types": "github:oneblink/types",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/styled-components": "^5.1.25",
+    "client": "^0.0.1"
   }
 }

@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/oneblink/toolkit-js/issues"
   },
-  "homepage": "https://github.com/oneblink/toolkit-js#readme"
+  "homepage": "https://github.com/oneblink/toolkit-js#readme",
+  "devDependencies": {
+    "@types/react-router-dom": "^5.3.3",
+    "@types/styled-components": "^5.1.25",
+    "client": "^0.0.1"
+  }
 }
