@@ -17,10 +17,15 @@
   },
   "homepage": "https://github.com/oneblink/toolkit-js#readme",
   "peerDependencies": {
-    "localforage": "^1.10.0"
+    "@oneblink/apps-react": "^1.2.3",
+    "@oneblink/apps": "^1.2.4",
+    "localforage": "^1.10.0",
+    "react": ">=17"
   },
   "dependencies": {
-    "@oneblink/sdk-core": "^0.4.1",
+    "@oneblink/sdk-core": "^0.4.1"
+  },
+  "devDependencies": {
     "@oneblink/types": "github:oneblink/types",
     "@types/lodash.clonedeep": "^4.5.7"
   }
