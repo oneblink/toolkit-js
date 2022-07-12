@@ -15,3 +15,4 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 - AutoSaveControlledForm component
 - Login and Logout button components
 - Client HTTP service
+- added AuthenticatedRoute, PaddingContainer and TextComponents
