@@ -20,8 +20,13 @@
     "localforage": "^1.10.0"
   },
   "dependencies": {
+    "@oneblink/apps": "^1.2.4",
     "@oneblink/sdk-core": "^0.4.1",
     "@oneblink/types": "github:oneblink/types",
-    "@types/lodash.clonedeep": "^4.5.7"
+    "@types/lodash.clonedeep": "^4.5.7",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.15"
   }
 }
