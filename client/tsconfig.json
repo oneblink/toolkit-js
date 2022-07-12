@@ -2,7 +2,8 @@
   "extends": "../../tsconfig-base.json",
   "compilerOptions": {
     "outDir": "./build/client",
-    "composite": true
+    "composite": true,
+    "types": ["localforage"]
   },
   "references": []
 }
