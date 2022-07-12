@@ -57,7 +57,7 @@ export function useAutoSaveControlledForm() {
   return useContext(AutoSaveControlledFormContext)
 }
 
-export default function AutoSaveControlledForm({
+export function AutoSaveControlledForm({
   form,
   initialSubmission,
   onSubmit,
