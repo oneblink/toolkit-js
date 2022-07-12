@@ -1,10 +1,7 @@
-import { useCallback } from 'react'
+import { useCallback, ReactNode } from 'react'
 import { authService } from '@oneblink/apps'
 
-export function LoginButton(
-  cognitoClientID: string,
-  children?: React.ReactNode,
-) {
+export function LoginButton(cognitoClientID: string, children?: ReactNode) {
   const logIn = useCallback(async () => {
     await authService?.loginHostedUI(cognitoClientID)
   }, [])
