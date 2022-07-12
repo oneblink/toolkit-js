@@ -1,5 +1,8 @@
-import validateConfig from '../packages/validate-config'
+import validateConfig from 'validate-config'
+import AutoSaveControlledForm, {
+  useAutoSaveControlledForm,
+} from './src/components/AutoSaveControlledForm'
 
 export { ReferenceDataStore } from './src/reference-data'
 export * as definitionService from './src/definition-manipulation'
-export { validateConfig }
+export { validateConfig, AutoSaveControlledForm, useAutoSaveControlledForm }

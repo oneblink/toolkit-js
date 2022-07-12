@@ -4,6 +4,7 @@ import {
   PropsWithChildren,
   createContext,
   useContext,
+  SetStateAction,
 } from 'react'
 import {
   OneBlinkFormControlled,
@@ -102,9 +103,7 @@ export default function AutoSaveControlledForm({
   /* update subsmission data here */
   const customSetFormSubmission = useCallback(
     (
-      formSubmission: (
-        formSubmissionState: FormSubmissionState,
-      ) => FormSubmissionState | FormSubmissionState,
+      formSubmission: SetStateAction<FormSubmissionState> | FormSubmissionState,
     ) => {
       setFormSubmission((currentState: FormSubmissionState) => {
         const newFormSubmission: FormSubmissionState =

@@ -4,6 +4,7 @@
   "description": "Client toolkit used in OneBlink projects",
   "main": "index.js",
   "scripts": {
+    "build": "tsc --build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,13 +18,14 @@
   },
   "homepage": "https://github.com/oneblink/toolkit-js#readme",
   "peerDependencies": {
-    "@oneblink/apps-react": "^1.2.3",
     "@oneblink/apps": "^1.2.4",
+    "@oneblink/apps-react": "^1.2.3",
     "localforage": "^1.10.0",
     "react": ">=17"
   },
   "dependencies": {
-    "@oneblink/sdk-core": "^0.4.1"
+    "@oneblink/sdk-core": "^0.4.1",
+    "validate-config": "^0.0.1"
   },
   "devDependencies": {
     "@oneblink/types": "github:oneblink/types",

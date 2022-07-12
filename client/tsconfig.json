@@ -1,8 +1,9 @@
 {
-  "extends": "../../tsconfig-base.json",
+  "extends": "../tsconfig-base.json",
   "compilerOptions": {
-    "outDir": "./build/client",
     "composite": true,
+    "jsx": "react-jsx",
+    "outDir": "../build/client",
     "types": ["localforage"]
   },
   "references": []
