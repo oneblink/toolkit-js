@@ -6,6 +6,10 @@
     },
     {
       "path": "./packages/http-service"
-    }
+    },
+    {
+      "path": "./packages/is-element-visible"
+    },
+    { "path": "./client" }
   ]
 }
