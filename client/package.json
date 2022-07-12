@@ -10,23 +10,22 @@
     "type": "git",
     "url": "git+https://github.com/oneblink/toolkit-js.git"
   },
-  "author": "Simon Dobie",
+  "author": "OneBlink <developers@oneblink.io> (https://oneblink.io)",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/oneblink/toolkit-js/issues"
   },
   "homepage": "https://github.com/oneblink/toolkit-js#readme",
+  "dependencies": {},
   "peerDependencies": {
-    "localforage": "^1.10.0"
-  },
-  "dependencies": {
     "@oneblink/apps": "^1.2.4",
     "@oneblink/sdk-core": "^0.4.1",
-    "@oneblink/types": "github:oneblink/types",
-    "@types/lodash.clonedeep": "^4.5.7",
-    "react": "^18.2.0"
+    "react": "^18",
+    "localforage": "^1.10.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.15"
+    "@types/react": "^18",
+    "@types/lodash.clonedeep": "^4.5.7",
+    "@oneblink/types": "github:oneblink/types"
   }
 }
