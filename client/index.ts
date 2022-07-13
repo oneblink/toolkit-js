@@ -6,4 +6,6 @@ export {
   AutoSaveControlledForm,
   useAutoSaveControlledForm,
 } from './src/components/AutoSaveControlledForm'
+export { LoginButton } from './src/components/LoginButton'
+export { LogoutButton } from './src/components/LogoutButton'
 export { validateConfig }
