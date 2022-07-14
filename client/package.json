@@ -24,8 +24,10 @@
     "react": ">=17"
   },
   "dependencies": {
+    "@oneblink/apps": "^1.2.4",
     "@oneblink/sdk-core": "^0.4.1",
-    "validate-config": "^0.0.1"
+    "validate-config": "^0.0.1",
+    "http-service": "^0.0.1"
   },
   "devDependencies": {
     "@oneblink/types": "github:oneblink/types",
