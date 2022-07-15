@@ -30,10 +30,10 @@ interface ClientHTTPService {
 
 const jwtHandler: ProxyHandler<ClientHTTPService[keyof ClientHTTPService]> = {
   apply: function (target, thisArg, args) {
-    const jwt = args[0].jwt
+    const jwtOption = args[0].jwt
 
     // if jwt is not supplied use the OneBlink JWT
-    if (jwt == null) {
+    if (jwtOption == null || jwtOption === true) {
       return authService
         .getIdToken()
         .then((jwt) =>
@@ -43,7 +43,7 @@ const jwtHandler: ProxyHandler<ClientHTTPService[keyof ClientHTTPService]> = {
 
     // if jwt is supplied or set to false, use jwt or no jwt
     const newOptions =
-      jwt === false
+      jwtOption === false
         ? {
             ...args[0],
             jwt: undefined,
