@@ -6,5 +6,5 @@
     "outDir": "../build/client",
     "types": ["localforage"]
   },
-  "references": []
+  "references": [{ "path": "../packages/http-service" }]
 }
