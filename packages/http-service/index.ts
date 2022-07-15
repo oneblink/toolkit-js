@@ -128,7 +128,7 @@ export default function httpService<FetchType extends FetchFn>(_f: FetchType) {
       body: Record<PropertyKey, unknown>
       jwt?: string
       signal?: AbortSignal
-    }) {
+    }): Promise<TOut> {
       const response = await send(
         url,
         {
@@ -152,7 +152,7 @@ export default function httpService<FetchType extends FetchFn>(_f: FetchType) {
       query?: Record<string, string> | URLSearchParams
       jwt?: string
       signal?: AbortSignal
-    }) {
+    }): Promise<void> {
       if (query && !(query instanceof URLSearchParams)) {
         query = new URLSearchParams(query)
       }

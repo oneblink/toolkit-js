@@ -26,11 +26,12 @@
   "dependencies": {
     "@oneblink/apps": "^1.2.4",
     "@oneblink/sdk-core": "^0.4.1",
-    "validate-config": "^0.0.1",
-    "http-service": "^0.0.1"
+    "http-service": "^0.0.1",
+    "validate-config": "^0.0.1"
   },
   "devDependencies": {
     "@oneblink/types": "github:oneblink/types",
-    "@types/lodash.clonedeep": "^4.5.7"
+    "@types/lodash.clonedeep": "^4.5.7",
+    "ts-toolbelt": "^9.6.0"
   }
 }
