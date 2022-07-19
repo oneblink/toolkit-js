@@ -20,18 +20,21 @@
   "peerDependencies": {
     "@oneblink/apps": "^1.2.4",
     "@oneblink/apps-react": "^1.2.3",
+    "@oneblink/sdk-core": "^0.4.1",
     "localforage": "^1.10.0",
-    "react": ">=17"
+    "react": ">=17",
+    "react-router-dom": "5.x",
+    "styled-components": "5.x"
   },
   "dependencies": {
-    "@oneblink/apps": "^1.2.4",
-    "@oneblink/sdk-core": "^0.4.1",
     "http-service": "^0.0.1",
     "validate-config": "^0.0.1"
   },
   "devDependencies": {
     "@oneblink/types": "github:oneblink/types",
     "@types/lodash.clonedeep": "^4.5.7",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/styled-components": "^5.1.25",
     "ts-toolbelt": "^9.6.0"
   }
 }

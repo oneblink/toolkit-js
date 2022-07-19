@@ -9,3 +9,5 @@ export {
 export { LoginButton } from './src/components/LoginButton'
 export { LogoutButton } from './src/components/LogoutButton'
 export { validateConfig }
+export * as TextComponents from './src/components/TextComponents'
+export { PaddingContainer } from './src/components/PaddingContainer'
